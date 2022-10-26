@@ -1,0 +1,40 @@
+package com.HashMap;
+
+import java.util.HashMap;
+
+public class StringWordOccur {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+		// TODO Auto-generated method stub
+		
+		String str = "what you seek is seeking you";
+		//int duplicatesCount = 0;
+		int wordNum = 0;
+		HashMap<String , Integer> m = new HashMap<String , Integer>();
+		String[] s = str.split(" ");
+		for(String s1 : s )
+		{
+			wordNum++;
+			if(m.containsKey(s1))
+			{
+				int count = m.get(s1);
+				m.put(s1, ++count);
+				//duplicatesCount++;
+			}else {
+				m.put(s1, 1);
+				
+			}
+		}
+		
+		System.out.println(m);
+		//System.out.println(duplicatesCount);
+		System.out.println(wordNum);
+	
+	
+
+	}
+
+}

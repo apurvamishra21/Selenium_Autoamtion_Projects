@@ -1,0 +1,28 @@
+package section1.locators;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class RegistrationPage {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
+		driver.get("D:\\Technical\\HTML\\RegistrationPage.html");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		Thread.sleep(1000);
+		driver.findElement(By.tagName("input")).sendKeys("Swadheenta");
+		Thread.sleep(1000);
+		
+		driver.close();
+
+	}
+
+}

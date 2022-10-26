@@ -1,0 +1,42 @@
+package TestCases;
+
+
+
+import org.testng.annotations.Test;
+
+import org.testng.asserts.SoftAssert;
+import org.testng.Assert;
+
+
+
+
+
+public class Validations {
+	
+	@Test
+	public void check() {
+
+	String actual = "Showing";
+	String expected = "showing";
+	
+	SoftAssert sa = new SoftAssert();
+	sa.assertEquals(actual,expected);
+	
+	System.out.println("Good Afternoon");
+	sa.assertAll();
+	
+	}
+	
+	}
+		
+		
+		
+	
+
+	
+	
+
+	
+
+
+

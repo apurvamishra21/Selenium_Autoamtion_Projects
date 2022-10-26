@@ -1,0 +1,35 @@
+package section1.locators;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class ValidateErrorMessageWithColour {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://demo.actitime.com/login.do");
+		driver.manage().window().maximize();
+		
+		driver.findElement(By.id("loginButton")).click();
+		WebElement error = driver.findElement(By.className("errormsg"));
+		String actualError = error.getText();
+		if(actualError.equals("Username or Password is invalid. Please try again."))
+		{
+			System.out.println("Error text validation pass");
+		}else {
+			System.out.println("Error text validation fail");
+		}
+		String actualColourCode = error.getCssValue("colour");
+		System.out.println(actualColourCode);
+	}
+
+	}
+
+

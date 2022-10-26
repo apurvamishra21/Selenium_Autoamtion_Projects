@@ -1,0 +1,8 @@
+package testNGListenerOnFailure;
+
+import org.testng.ITestListener;
+
+public class TestListener extends TestBase implements ITestListener{
+	
+	
+}

@@ -1,0 +1,17 @@
+package ip_op;
+
+public class UnicodeSys {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i = 5; 
+		 System.out.println(i++ + i-- + ++i + --i + i);
+		 
+		
+			 for(int x=0;;)
+			 {
+			 System.out.println(x);//infinite loop
+			 }
+	}
+
+}

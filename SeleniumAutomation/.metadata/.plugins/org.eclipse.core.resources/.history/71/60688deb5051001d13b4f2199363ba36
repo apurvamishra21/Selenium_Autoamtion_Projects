@@ -1,0 +1,30 @@
+package TestCases;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+@Test
+public class SoftAssert {
+
+	SoftAssert softAssert = new SoftAssert();
+
+	softAssert.assertEquals("Hello", "Hello", "First soft assert failed - testCasetwo");
+	System.out.println("Soft assert success....");
+	softAssert.assertTrue("Hello".equals("hello"), "Second soft assert failed - testCasetwo");
+	softAssert.assertTrue("Welcome".equals("welcomeeee"), "Third soft assert failed - testCasetwo");
+	System.out.println("*** test case two executed successfully ***");
+	softAssert.assertAll();
+	
+	}
+		
+		
+		
+	
+
+	
+	
+
+	
+
+
+

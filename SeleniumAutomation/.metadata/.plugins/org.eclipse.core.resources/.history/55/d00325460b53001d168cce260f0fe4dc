@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression suite">
+  <test name="TestParametersFromXML Test">
+  <parameter name = "browser" value = "chrome"></parameter>
+    <classes>
+      <class name="parameterization.TestParametersFromXML"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Regression Validate Title Test">
+  <groups> 
+	<run> 
+	<include name="smoke"></include> 
+	<exclude name="functional"></exclude> 
+	</run>
+	 </groups>
+    <classes>
+    
+      <class name="regression.ReUsableMethods"/>
+     
+    </classes>
+  </test> <!-- Test -->
+  
+ 
+  
+</suite> <!-- Suite -->

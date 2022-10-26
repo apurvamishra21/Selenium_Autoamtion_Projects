@@ -1,0 +1,12 @@
+package testCases;
+
+public class TestSkip {
+	
+	@Test
+	public void isSkip() {
+		throw new SkipException("skipping the test as the condition fails");
+			
+		
+	}
+
+}

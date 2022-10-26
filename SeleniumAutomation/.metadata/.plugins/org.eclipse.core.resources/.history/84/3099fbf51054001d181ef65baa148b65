@@ -1,0 +1,24 @@
+package hashSet;
+
+import java.util.HashSet;
+
+public class DuplicateCharsInString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String s = "swadheenta";
+		char[] ch = s.toCharArray();
+		HashSet hs = new HashSet(ch);
+		
+		for(char c :ch )
+		{
+			if(!hs.add(c))
+			{
+				System.out.println(c);
+			}
+		}
+
+	}
+
+}

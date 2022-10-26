@@ -1,0 +1,16 @@
+package TEST;
+
+public class HackerEarth {
+	
+	static void proc1() throws IllegalAccessException
+	{
+		System.out.println("Inside Proc1");
+		throw new IllegalAccessException("Java");
+	}
+
+	public static void main(String[] args) throws IllegalAccessException {
+		// TODO Auto-generated method stub
+		proc1();
+	}
+
+}

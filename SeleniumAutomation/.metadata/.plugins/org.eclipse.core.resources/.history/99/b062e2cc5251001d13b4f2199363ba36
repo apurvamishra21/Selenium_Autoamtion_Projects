@@ -1,0 +1,37 @@
+package TestCases;
+
+
+
+import org.testng.annotations.Test;
+
+import org.testng.asserts.SoftAssert;
+import org.testng.Assert;
+
+
+
+
+@Test
+public class Verify {
+
+	String actual = "Showing";
+	String expected = "showing";
+	
+	SoftAssert sa = new SoftAssert();
+	sa.assertEquals(actual,expected);
+	
+	
+	
+	
+	}
+		
+		
+		
+	
+
+	
+	
+
+	
+
+
+

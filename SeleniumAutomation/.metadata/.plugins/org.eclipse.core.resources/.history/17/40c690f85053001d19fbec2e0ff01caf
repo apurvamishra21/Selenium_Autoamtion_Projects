@@ -1,0 +1,23 @@
+package testNGListenerOnFailure;
+
+import org.testng.ITestContext;
+import org.testng.ITestListener;
+
+public class TestListener extends TestBase implements ITestListener {
+
+	@Override
+	public void onFinish(ITestContext arg0) {
+
+		TestUtil.zip(System.getProperty("user.dir")+"\\screenshot");
+		monitoringMail mail = new monitoringMail();
+		try {
+			mail.sendMail(TestConfig.server, TestConfig.from, TestConfig.to, TestConfig.subject, TestConfig.messageBody, TestConfig.attachmentPath, TestConfig.attachmentName);
+		} catch (AddressException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (MessagingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}

@@ -1,0 +1,17 @@
+package Swap;
+
+public class Swap2StringsWithoutUsingThirdVariable {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String a = "Hello";
+		String b = "World";
+		
+		System.out.println("before swapping : ");
+		System.out.println("The value of a is : " + a );
+		System.out.println("The value of a is : " + b );
+
+	}
+
+}

@@ -1,0 +1,2 @@
+INFO    2022-08-27 16:28:23,600 [main] excelReader.Utilities.TestLogs  - This is the information log
+ERROR   2022-08-27 16:28:23,602 [main] excelReader.Utilities.TestLogs  - Here the error logs will be printed

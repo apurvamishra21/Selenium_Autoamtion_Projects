@@ -1,0 +1,17 @@
+package com.collections;
+
+public class List_Integer_OddNums {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public static boolean onlyOddNumbers(List<Integer> list) {
+		for (int i : list) {
+			if (i % 2 == 0)
+				return false;
+		}
+		return true;
+	}
+
+}

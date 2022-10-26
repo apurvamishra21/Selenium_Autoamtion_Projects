@@ -1,0 +1,25 @@
+package testNGListenerOnFailure;
+
+import java.io.IOException;
+
+import org.testng.ITestListener;
+import org.testng.ITestResult;
+
+public class TestListener extends TestBase implements ITestListener{
+	
+	public void onTestFailure(ITestResult arg0) {
+		
+		try {
+			//TestUtil.captureScreenshot();
+			TestUtil.captureScreenshot(methodName);
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+	}
+	
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;section1.locators.LoginRemotePC&apos; to &apos;LoginRemotePCImpQ&apos;&#x0D;&#x0A;- Original project: &apos;SeleniumNotes&apos;&#x0D;&#x0A;- Original element: &apos;section1.locators.LoginRemotePC&apos;&#x0D;&#x0A;- Renamed element: &apos;section1.locators.LoginRemotePCImpQ&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;LoginRemotePC&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;section1.locators{LoginRemotePC.java[LoginRemotePC" matchStrategy="1" name="LoginRemotePCImpQ" qualified="false" references="true" similarDeclarations="false" stamp="1664032767998" textual="false" version="1.0"/>
+</session>

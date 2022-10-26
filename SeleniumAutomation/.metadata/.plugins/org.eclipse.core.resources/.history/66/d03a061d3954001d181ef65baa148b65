@@ -1,0 +1,94 @@
+package assignment;
+
+import java.util.HashMap;
+
+public class UniqueWords {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String s = "Designed and developed data driven framework using Selenium web driver, TestNG & Maven. Worked on BDD framework. Worked on Jenkins for script scheduling. Responsible for Framework enhancement. Responsible for creating the Test Estimation, Test Summary Report, providing status in daily team meeting.";
+		String[] str = s.split(" ")	;
+		int wordNum = 0;
+		int duplicatesCount = 0;
+		int count = 0;
+		HashMap<String,Integer> m = new HashMap<String,Integer>();
+		
+		for(String word : str)
+		{
+			wordNum++;
+			if(m.containsKey(word)) {
+				 count = m.get(word);
+				m.put(word , ++count);
+				duplicatesCount++;
+			}else {
+				m.put(word, 1);
+			}
+			
+			if(count == 1)
+			{
+				System.out.println(m);
+			}
+		}
+		
+		
+		System.out.println(wordNum);
+		//System.out.println(m);
+		System.out.println(duplicatesCount);
+		
+		
+
+	}
+
+}
+/*
+So now, First Round Question is-
+
+Designed and developed data driven framework using Selenium web driver, TestNG & Maven. Worked on BDD framework. Worked on Jenkins for script scheduling. Responsible for Framework enhancement. Responsible for creating the Test Estimation, Test Summary Report, providing status in daily team meeting.
+
+Write a Java Program to 
+1.	Count the number of words in the following Paragraph.
+2.	Remove duplicate words if any and then display the duplicate words with their number of occurrences in the paragraph
+3.	Display all the unique words in sorted order
+package com.HashMap;
+
+import java.util.HashMap;
+
+public class StringWordOccur {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+		// TODO Auto-generated method stub
+		
+		String str = "what you seek is seeking you";
+		//int duplicatesCount = 0;
+		int wordNum = 0;
+		HashMap<String , Integer> m = new HashMap<String , Integer>();
+		String[] s = str.split(" ");
+		for(String s1 : s )
+		{
+			wordNum++;
+			if(m.containsKey(s1))
+			{
+				int count = m.get(s1);
+				m.put(s1, ++count);
+				//duplicatesCount++;
+			}else {
+				m.put(s1, 1);
+				
+			}
+		}
+		
+		System.out.println(m);
+		//System.out.println(duplicatesCount);
+		System.out.println(wordNum);
+	
+	
+
+	}
+
+}
+
+*/

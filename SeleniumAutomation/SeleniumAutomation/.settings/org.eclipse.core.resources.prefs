@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+encoding//src/test/java/com/CaptureInventory/CaptureFlipkartInventory.java=UTF-8
+encoding//src/test/java/section1/WebDriverMethods/FlipkartCaptureAttributeValues.java=UTF-8
+encoding//src/test/java/section1/WebDriverMethods/FlipkartGetAttributeValue.java=UTF-8
+encoding//src/test/java/section1/locators/CaptureFlipkartPriceSurroundingElement.java=UTF-8
+encoding//src/test/java/section1/locators/CaptureIstAndLastAddToCompare.java=UTF-8
+encoding//src/test/java/section1/locators/FlipkartCaptureAttributeValues.java=UTF-8
+encoding//src/test/java/section1/locators/FlipkartGetAttributeValue.java=UTF-8

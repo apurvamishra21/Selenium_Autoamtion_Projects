@@ -1,0 +1,39 @@
+package assignment;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+public class RemoveDuplicates {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String s = "Designed and developed data driven framework using Selenium web driver, TestNG & Maven. Worked on BDD framework. Worked on Jenkins for script scheduling. Responsible for Framework enhancement. Responsible for creating the Test Estimation, Test Summary Report, providing status in daily team meeting.";
+		String[] str = s.split(" ");
+		int count = 0;
+		Map<String ,Integer> m = new HashMap<String,Integer>();
+		
+		for(String word : str)
+		{
+			
+			if(m.containsKey(word)) {
+				 count = m.get(word);
+				m.put(word , ++count);
+				
+			
+			}else {
+				m.put(word, 1);
+				System.out.println(m);
+			}
+			
+			if(count > 1)
+				m.remove(word, m.get(word));
+		}
+		
+		
+
+	}
+
+}

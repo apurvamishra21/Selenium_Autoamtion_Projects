@@ -1,0 +1,16 @@
+package testNGListenerOnFailure;
+
+import org.testng.ITestListener;
+import org.testng.ITestResult;
+
+public class TestListener extends TestBase implements ITestListener{
+	
+	public void onTestFailure(ITestResult arg0) {
+		
+		TestUtil.captureScreenshot();
+		
+		
+	}
+	
+	
+}

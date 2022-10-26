@@ -1,0 +1,36 @@
+package assignment;
+
+import java.util.HashMap;
+
+public class UniqueWords {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String s = "Designed and developed data driven framework using Selenium web driver, TestNG & Maven. Worked on BDD framework. Worked on Jenkins for script scheduling. Responsible for Framework enhancement. Responsible for creating the Test Estimation, Test Summary Report, providing status in daily team meeting.";
+		String[] str = s.split(" ")	;
+		int wordNum = 0;
+		HashMap<String,Integer> hm = new HashMap<String,Integer>();
+		
+		for(String word : str)
+		{
+			wordNum++;
+		}
+		
+		System.out.println(wordNum);
+		
+		
+
+	}
+
+}
+/*
+So now, First Round Question is-
+
+Designed and developed data driven framework using Selenium web driver, TestNG & Maven. Worked on BDD framework. Worked on Jenkins for script scheduling. Responsible for Framework enhancement. Responsible for creating the Test Estimation, Test Summary Report, providing status in daily team meeting.
+
+Write a Java Program to 
+1.	Count the number of words in the following Paragraph.
+2.	Remove duplicate words if any and then display the duplicate words with their number of occurrences in the paragraph
+3.	Display all the unique words in sorted order
+*/

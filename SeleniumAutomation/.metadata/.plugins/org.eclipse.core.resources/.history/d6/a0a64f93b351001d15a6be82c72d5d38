@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Smoke Suite">
+  
+  
+  <test name="Login Test">
+		<classes>
+
+			<class name="testCases.HardAssert" />
+
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Validate Title Test">
+	<groups> <run> <include name="bvt"></include> </run> </groups>
+		<classes>
+
+			<class name="testCases.ReUsableMethods" />
+		</classes>
+	</test> <!-- Test -->
+
+
+	
+
+</suite> <!-- Suite -->

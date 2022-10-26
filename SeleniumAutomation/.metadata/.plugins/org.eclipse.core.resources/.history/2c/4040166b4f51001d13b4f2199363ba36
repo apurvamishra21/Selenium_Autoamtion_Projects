@@ -1,0 +1,43 @@
+package TestCases;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+
+public class SoftAssert {
+
+
+
+	@Test
+	public void validateTitles() {
+		
+		SoftAssert sa=new SoftAssert();
+		
+		sa.assertEquals("strings dont match:", "Test1", "Test");
+
+        {
+        String [] name1= {"jeeva","balan","madhu"};
+
+        String [] name2= {"jeeva","balan","madhu"};
+
+
+        Assert.assertArrayEquals("name does not match", name1, name2);
+        }
+        System.out.println("execution continued");
+
+        sa.assertFalse(2<2,"numbers does not matches ");
+
+        sa.assertSame("jeeva", "jeeva1");
+        sa.assertAll();
+		
+		
+		
+	}
+
+	
+	
+
+	
+
+
+}

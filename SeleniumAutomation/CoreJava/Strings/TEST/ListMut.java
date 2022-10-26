@@ -1,0 +1,31 @@
+package TEST;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListMut {
+	
+	public void display()
+	{
+		List<String> list = new ArrayList<String>();
+		list.add("Alice");
+		list.add("Smith");
+		list.add("Jones");
+		
+		for(String str : list)
+		{
+			str += "50";
+		}
+		System.out.println(list);
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ListMut obj = new ListMut();
+		obj.display();
+
+	}
+
+}

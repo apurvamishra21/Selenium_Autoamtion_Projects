@@ -1,0 +1,16 @@
+package paramterization;
+
+import org.testng.annotations.Test;
+
+public class NewLoginTest {
+
+	
+		
+		@Test(dataProvider = "dp1")
+		public void testData(String username , String password) {
+			System.out.println(username + "--------------" +password);
+		
+
+	}
+
+}

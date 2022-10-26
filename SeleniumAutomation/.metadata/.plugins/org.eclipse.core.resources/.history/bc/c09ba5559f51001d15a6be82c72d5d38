@@ -1,0 +1,28 @@
+package TestCases;
+
+import org.testng.annotations.Test;
+
+public class TestDepensOn {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}@Test(priority = 2 , , dependsOnMethods = "doLogin" )
+	public void doLogin() {
+		
+		System.out.println("Executing login Test");
+	}
+
+	@Test(priority = 1)
+	public void doUserReg() {
+		
+		System.out.println("Executing User Reg Test");
+	}
+	
+	@Test(priority = 4 , dependsOnMethods = "doUserReg" , alwaysRun = "true")
+	public void thirdTest() {
+		System.out.println("Executing Third Test");
+	}
+
+
+}

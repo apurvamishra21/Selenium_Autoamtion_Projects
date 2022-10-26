@@ -1,0 +1,22 @@
+package paramterization;
+
+public class DataProviders {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		public static Object[][] getData(){
+			
+			Object[][] data = new Object[2][2];
+			
+			data[0][0] = "Anu";
+			data[0][1] = "root";
+			
+			data[1][0] = "Apu";
+			data[1][0] = "root";
+			
+			return data;
+		}
+
+	}
+
+}

@@ -1,0 +1,31 @@
+package Hackerrank;
+
+import java.util.Arrays;
+import java.util.Comparator;
+
+public class StringToken {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//using java 8 streams
+		/*String s = "Today is the happiest day of my life";
+		String longestWord = Arrays.stream(s.split(" "))
+							.max(Comparator.comparingInt(String::length))
+							.orElse(null)
+							.toString();
+		System.out.println(longestWord + " , length- " + longestWord.length());*/
+		
+		
+		 String s= "Today is the happiest day of my life";
+         String [] word = s.split(" ");
+  String maxlethWord = "";
+  for(int i = 0; i < word.length; i++){
+          if(word[i].length() >= maxlethWord.length()){
+                maxlethWord = word[i];
+          } 
+  }
+   System.out.println(maxlethWord); 
+
+	}
+
+}

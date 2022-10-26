@@ -1,0 +1,20 @@
+package com.words;
+
+import java.util.Scanner;
+
+public class ShortestWordInAString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s = "today is the happiest day of my life";
+		String[] words = s.split(" ");
+		String shortestword = words[0];
+		for (int i = 1; i < s.length()-2; i++) {
+			if (words[i].length() < shortestword.length()) {
+				shortestword =words[i];
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;ExtentReports/testng.xml&apos; to &apos;extentReports.xml&apos;" description="Rename resource &apos;testng.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="testng.xml" name="extentReports.xml" stamp="1666601509036" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;ExtentReports/extentReports.xml&apos; to &apos;extent-config.xml&apos;" description="Rename resource &apos;extentReports.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="extentReports.xml" name="extent-config.xml" stamp="1666601533911" updateReferences="true"/>
+</session>

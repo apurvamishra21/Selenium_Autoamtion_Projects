@@ -1,0 +1,38 @@
+package RepeatedCharactersInString;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Optional;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
+public class FirstRepeatedCharacter {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		/*Map<Character, Long> collect =  "abcsdnvs".chars().mapToObj(i -> (char)i).collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new, Collectors.counting()));
+        collect.forEach( (x,y) -> System.out.println( "Key: " + x + " Val: " + y));
+
+        Optional<Character> firstNonRepeat = collect.entrySet().stream().filter( (e) -> e.getValue() == 1).map(e -> e.getKey()).findFirst();
+        if(firstNonRepeat.isPresent()) {
+            System.out.println("First non repeating:" + firstNonRepeat.get());
+        }
+        Optional<Character> firstRepeat = collect.entrySet().stream().filter( (e) -> e.getValue() > 1).map(e -> e.getKey()).findFirst();
+        System.out.println("First repeating:" + firstRepeat.orElse(null));*/
+
+	}
+	char findFirstRepeatingCharOfStr(String str) {
+	    str = str.toLowerCase(); // to avoid any case sensitive issue
+
+	    for (int i = 0; i < str.length(); i++) {
+	      if (str.lastIndexOf(str.charAt(i)) > i) {
+	        return str.charAt(i);
+	      }
+	    }
+
+	    return 0; // 0 or null if no char is repeating
+	  }
+
+}
+//https://stackoverflow.com/questions/39529831/how-to-find-first-repeated-and-non-repeated-character-in-a-string-using-java8

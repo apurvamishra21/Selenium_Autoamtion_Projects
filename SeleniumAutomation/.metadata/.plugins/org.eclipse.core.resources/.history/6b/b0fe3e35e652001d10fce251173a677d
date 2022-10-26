@@ -1,0 +1,17 @@
+package paramterization;
+
+public class ExcelUsingUtility {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ExcelApiTest eat = new ExcelApiTest("");
+		
+		int colCount = eat.getColumnCount("Credentials");
+	       System.out.println("Total Columns in the Excel : "+colCount);
+	       int rowCount = eat.getRowCount("Credentials");
+	       System.out.println("Total Rows in the Excel : "+rowCount);
+
+	}
+
+}

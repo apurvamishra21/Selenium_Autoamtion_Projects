@@ -1,0 +1,59 @@
+package ip_op;
+
+public class UnicodeSys {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//int i = 5; 
+		// System.out.println(i++ + i-- + ++i + --i + i);
+		 
+		
+			/* for(int x=0;;)
+			 {
+			 System.out.println(x);//infinite loop
+			 }*/
+		 
+		 /*String str = "Hello World";
+		 strFunc(str, 0);
+		 }
+		 public static void strFunc(String str, int i)
+		 {
+		 if(i==str.length())
+		 return;
+		 System.out.println(str.charAt(i));
+		 strFunc(str,i+1);*/
+		 /*
+H
+e
+l
+l
+o
+ 
+W
+o
+r
+l
+d
+
+		  
+		 String str = "Hello World";
+		 strFunc(str, 0);
+		 }
+		 public static void strFunc(String str, int i)
+		 {
+		 if(i==str.length())
+		 return;
+		 else if(str.charAt(i)!=' ')
+		 System.out.print(str.charAt(i));
+		 strFunc(str,i+1);//HelloWorld*/
+		 
+		
+			 String str = "Hello World";
+			 for(int i=0;;i++)
+			 if(i==str.length())
+			 break;
+			 else if(str.charAt(i)!=' ')
+			 System.out.print(str.charAt(i));//HelloWorld
+	}
+
+}

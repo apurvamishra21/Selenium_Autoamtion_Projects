@@ -1,0 +1,36 @@
+package TestCases;
+
+
+
+import org.testng.annotations.Test;
+
+import org.testng.asserts.SoftAssert;
+
+
+
+
+
+@Test
+public class TCSoftAssert {
+
+	String actual = "Showing";
+	String expected = "showing";
+	
+	SoftAssert sa = new SoftAssert();
+	sa.
+	
+	
+	
+	}
+		
+		
+		
+	
+
+	
+	
+
+	
+
+
+

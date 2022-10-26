@@ -1,0 +1,24 @@
+package com.words;
+
+import java.util.Scanner;
+
+public class ShortestWordInAString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		int numwords = scan.nextInt();
+	    String sentence = scan.nextLine();
+	    String shortestword = new String();
+	    String[] words = sentence.split(" ");
+	    for (int i = 0; i < numwords; i++){
+	        if (shortestword.length() > words[i].length()){
+	            shortestword = words[i];
+
+	        }
+	    }
+	    System.out.printf(shortestword);
+
+	}
+
+}

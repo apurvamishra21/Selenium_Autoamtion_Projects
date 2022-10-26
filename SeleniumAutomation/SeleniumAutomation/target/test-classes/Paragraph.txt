@@ -1,0 +1,13 @@
+Hello '&name&', Welcome to DP World!
+
+DP World is a leading enabler of global trade and one of the world's largest logistics and supply chain solutions companies. With operations in over &&countries&& countries across #&continents&& continents and 50,000 plus employees.
+
+<p>We have our footprints across all facets of logistics including
+
+- cargo containment
+- /&features[0]&/
+- !&features[1]&!
+
+We are also the largest logistics end-to-end solution provider in India.</p>
+
+<p>DP World Tech is the powerhouse of tech innovations in India.</p>

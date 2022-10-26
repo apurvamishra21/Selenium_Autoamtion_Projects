@@ -1,0 +1,28 @@
+package com.RelativeLocators;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.locators.RelativeLocator;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class RelativeLocRegnPage {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
+		driver.get("D:\\Technical\\HTML\\RegistrationPage.html");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		
+		By emailLocator = RelativeLocator.with(By.tagName("input")).above(input[type='phonenumber']);
+
+		
+
+	}
+
+}

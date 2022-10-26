@@ -1,0 +1,19 @@
+package parameterization;
+
+import org.testng.annotations.Test;
+
+import org.testng.annotations.Parameters;
+
+public class TestParametersFromXML {
+
+	
+
+		@Parameters({"browser","env"})
+		@Test
+		public void getBrowser(String browser,String env) {
+			
+			System.out.println(browser+"--"+env);
+			
+		}
+		
+	}

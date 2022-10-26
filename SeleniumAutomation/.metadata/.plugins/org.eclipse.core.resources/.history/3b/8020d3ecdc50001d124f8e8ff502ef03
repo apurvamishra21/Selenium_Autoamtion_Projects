@@ -1,0 +1,10 @@
+package Swap;
+
+public class Swap2StringsWithoutUsingThirdVariable {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
